@@ -18,7 +18,6 @@ COPY . /var/www/html/
 
 # Si usas composer, instalar dependencias
 # Copiar composer files y ejecutar composer install solo si existen
-COPY composer.json composer.lock /var/www/html/ 2>/dev/null || true
 RUN php -r "if (file_exists('composer.json')) { echo 'Composer present'; }" \
     && if [ -f /var/www/html/composer.json ]; then \
     curl -sS https://getcomposer.org/installer | php && php composer.phar install --no-dev --prefer-dist; \
