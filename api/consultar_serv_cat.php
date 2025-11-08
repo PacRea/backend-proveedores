@@ -14,6 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
 }
 
 include __DIR__ . '/database.php';
+
 $input = json_decode(file_get_contents("php://input"), true);
 $cat = $input['categoria'];
 
