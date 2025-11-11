@@ -1,0 +1,17 @@
+{
+    "name": "diego/backend_proveedores",
+    "autoload": {
+        "psr-4": {
+            "Diego\\BackendProveedores\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Diego Rea Morales",
+            "email": "diegoream23@gmail.com"
+        }
+    ],
+    "require": {
+        "cloudinary/cloudinary_php": "^3.1"
+    }
+}
